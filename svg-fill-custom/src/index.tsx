@@ -18,18 +18,20 @@ const SvgBox: React.FunctionComponent<SVGProps> = (props) => {
   const { src, callback } = props;
   const SvgImage = src;
 
-  const onClickAction = () => {
+  const onClickAction = (
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
     if (callback && typeof callback === "function") {
-      callback();
+      callback(event);
     }
   };
 
   return (
-    <div {...props} onClick={onClickAction}>
+    <div {...props} onClick={(event) => onClickAction(event)}>
       {SvgImage}
     </div>
   );
-};
+}
 
 export const SVGCustom = styled(SvgBox)`
   & svg {
@@ -41,4 +43,4 @@ export const SVGCustom = styled(SvgBox)`
     max-width: ${(props) => props.maxWidth};
     max-height: ${(props) => props.maxHeight};
   }
-`;
+`
