@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/svg-fill-custom.svg)](https://www.npmjs.com/package/svg-fill-custom) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+![](Ảnh chụp Màn hình 2021-12-03 lúc 01.47.50.png)
+Demo: https://duongdam.github.io/svg-fill-custom/
 ## Install
 
 ```bash
