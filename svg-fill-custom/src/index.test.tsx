@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { SVGCustom } from ".";
 
-describe('ExampleComponent', () => {
-  it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
-  })
-})
+describe("SVGCustom", () => {
+  it("is truthy", () => {
+    expect(SVGCustom).toBeTruthy();
+  });
+});
